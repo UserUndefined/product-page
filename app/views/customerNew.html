@@ -1,0 +1,70 @@
+<div class="scrollable">
+    <div class="scrollable-content">
+        <div class="section">
+    <form role="form" ng-submit='login()'>
+        <fieldset>
+            <div class="form-group">
+                <input type="text"
+                       ng-model="customer.name"
+                       class="form-control"
+                       placeholder="Customer Name (Required)">
+            </div>
+            <div class="form-group">
+                <input type="text"
+                       ng-model="customer.contact"
+                       class="form-control"
+                       placeholder="Contact">
+            </div>
+            <div class="form-group">
+                <input type="text"
+                       ng-model="customer.telephone"
+                       class="form-control"
+                       placeholder="Phone Number (Required)">
+            </div>
+            <div class="form-group">
+                <input type="text"
+                       ng-model="customer.address1"
+                       class="form-control"
+                       placeholder="Address">
+            </div>
+            <div class="form-group">
+                <input type="text"
+                       ng-model="customer.address2"
+                       class="form-control"
+                       placeholder="Address">
+            </div>
+            <div class="form-group">
+                <input type="text"
+                       ng-model="customer.town"
+                       class="form-control"
+                       placeholder="Town">
+            </div>
+            <div class="form-group">
+                <input type="text"
+                       ng-model="customer.county"
+                       class="form-control"
+                       placeholder="County">
+            </div>
+            <div class="form-group">
+                <input type="text"
+                       ng-model="customer.postcode"
+                       class="form-control"
+                       placeholder="Postcode">
+            </div>
+            <div class="form-group">
+                <input type="text"
+                       ng-model="customer.url"
+                       class="form-control"
+                       placeholder="URL">
+            </div>
+        </fieldset>
+        <button class="btn btn-primary btn-block" type="button" id="newCustomerButton" ng-click="saveCustomer()">
+            Create Customer
+        </button>
+    </form>
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<div class="col s12 m12 l12">
+    <div class="row">
+        <h4>Search</h4>
+    </div>
+    <div class="row">
+        <div class='no-results' ng-hide='customers.length'>No customers</div>
+        <ul class="collection">
+            <a ng-repeat="customer in customers" class="collection-item" href="" ng-click="getCustomer(customer.id)">
+                <p>{{ customer.name }}</p>
+            </a>
+        </ul>
+    </div>
+</div>

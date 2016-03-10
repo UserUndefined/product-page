@@ -1,0 +1,5 @@
+{
+    "server": {
+        "activityUrl": "http://stagingserver.cloudapp.net:80/api/activities/"
+    }
+}

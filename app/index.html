@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en-gb" dir="ltr" class="uk-height-1-1">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Activity Tracker</title>
+    <style type="text/css"></style>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- Favicons-->
+    <link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+    <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
+    <!--  Android 5 Chrome Color-->
+    <meta name="theme-color" content="#EE6E73">
+    <!-- CSS-->
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+</head>
+
+<body>
+<header>
+    <nav class="top-nav">
+        <div class="container"><a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only right"><i class="mdi-navigation-menu"></i></a></div>
+        <div class="container">
+            <div class="nav-wrapper"><a class="page-title">PromoUk</a>
+                <ul class="right hide-on-med-and-down">
+                    <li class="bold"><a href="#" class="waves-effect waves-teal">Customer</a></li>
+                    <li class="bold"><a href="#" class="waves-effect waves-teal">Order</a></li>
+                    <li class="bold"><a href="#" class="waves-effect waves-teal">Payment</a></li>
+                    <li class="bold"><a href="#" class="waves-effect waves-teal">Links</a></li>
+                    <li class="bold"><tl-user></tl-user></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="navbar-fixed">
+    <ul id="nav-mobile" class="side-nav">
+        <li class="logo"><a id="logo-container" href="#" class="brand-logo">PromoUK</a></li>
+        <li class="bold"><a href="#" class="waves-effect waves-teal">Customer</a></li>
+        <li class="bold"><a href="#" class="waves-effect waves-teal">Order</a></li>
+        <li class="bold"><a href="#" class="waves-effect waves-teal">Payment</a></li>
+        <li class="bold"><a href="#" class="waves-effect waves-teal">Links</a></li>
+        <li class="bold"><tl-user></tl-user></li>
+    </ul>
+    </div>
+</header>
+<main>
+    <div class="section no-pad-bot" id="index-banner">
+        <div class="container">
+    <div class="row">
+        <div id="right" class="section scrollspy">
+            <div ng-class="{loading: loading}">
+                <div ng-show="loading" class="app-content-loading">
+                    <i class="fa fa-spinner fa-spin loading-spinner"></i>
+                </div>
+                <div>
+                    <div ui-view></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+</main>
+</body>
+
+<!--script src="scripts/config.js">
+</script-->
+
+<!-- build:js scripts/app.js -->
+<!-- bower:js -->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/lodash/lodash.min.js"></script>
+<script src="bower_components/momentjs/min/moment.min.js"></script>
+<script src="bower_components/restangular/dist/restangular.min.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="bower_components/mobile-angular-ui/dist/js/mobile-angular-ui.gestures.js"></script>
+<script src="bower_components/angular-cookie/angular-cookie.min.js"></script>
+<script src="bower_components/angular-flash/dist/angular-flash.js"></script>
+<script src="bower_components/Materialize/dist/js/materialize.min.js"></script>
+<!-- endbower -->
+<script src="scripts/config.js"></script>
+<script src="scripts/app.js"></script>
+<script src="scripts/controllers/login.js"></script>
+<script src="scripts/controllers/summary.js"></script>
+<script src="scripts/controllers/search.js"></script>
+<script src="scripts/controllers/customer.js"></script>
+<script src="scripts/controllers/product.js"></script>
+<script src="scripts/controllers/customerNew.js"></script>
+<script src="scripts/controllers/activity.js"></script>
+<script src="scripts/rest/module.js"></script>
+<script src="scripts/rest/activity-api.js"></script>
+<script src="scripts/services/userService.js"></script>
+<script src="scripts/directives/tl-user.js"></script>
+<!-- endbuild -->
+</body>
+</html>

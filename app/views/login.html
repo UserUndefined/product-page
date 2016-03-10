@@ -1,0 +1,52 @@
+<div class="col s12 m10 l10">
+    <h4>Login</h4>
+    <!-- Our Login Form -->
+    <form role="form" ng-submit='login()' name="loginForm" class="uk-panel uk-panel-box uk-form" ng-class="{ 'form--show-validation' : formSubmitted }" novalidate>
+        <div flash-alert="error" class="alert alert--error hide" active-class="show">
+            <p class="message message--error">{{ flash.message }}</p>
+        </div>
+
+        <div class="alert alert--error" ng-if="message">
+            <p class="message message--error">{{ message }}</p>
+        </div>
+        <fieldset>
+            <div class="row">
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="username"
+                           type="text"
+                           ng-model="values.username"
+                           class="form-control">
+                    <label for="username">Username</label>
+                </div>
+                <div class="form__error--inline" ng-if="formSubmitted && loginForm.username.$invalid">Username is required</div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="password"
+                           type="text"
+                           ng-model="values.password"
+                           class="form-control">
+                    <label for="password">Password</label>
+                </div>
+                <div class="form__error--inline" ng-if="formSubmitted && loginForm.password.$invalid">Password is required</div>
+            </div>
+        </fieldset>
+        <div class="row">
+            <div class="input-field col s12">
+                <input
+                        type="checkbox"
+                        id="rememberMe"
+                        ng-model="values.rememberMe"
+                />
+                <label for="rememberMe">Remember Me</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <button class="btn waves-effect waves-light col s12" type="submit" name="action" href="#" ng-click="login()">Login</button>
+            </div>
+        </div>
+    </form>
+</div>

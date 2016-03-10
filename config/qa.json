@@ -1,0 +1,5 @@
+{
+    "server": {
+        "activityUrl": "http://qaserver01/api/activities/"
+    }
+}

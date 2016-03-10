@@ -1,0 +1,22 @@
+{
+  "name": "activity-tracker",
+  "version": "1.0.0",
+  "dependencies": {
+    "lodash": "3.10.0",
+    "angular": "1.4.7",
+    "angular-flash": "0.1.9",
+    "bootstrap": "3.3.5",
+    "angular-ui-router": "0.2.15",
+    "angular-cookie": "*",
+    "restangular": "1.5.1",
+    "mobile-angular-ui": "~1.2.0-rc.3",
+    "angular-bootstrap": "~0.14.3",
+    "momentjs": "2.10.6",
+    "Materialize": "materialize#~0.97.5"
+  },
+  "devDependencies": {},
+  "resolutions": {
+    "jquery": "2.1.4",
+    "angular": "1.4.7"
+  }
+}
